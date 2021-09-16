@@ -11,6 +11,11 @@ const peer = ExpressPeerServer(server, {
 app.use('/peerjs', peer);
 app.set('view engine', 'ejs')
 app.use(express.static('public'))
+
+app.use(/\/(index.js|package.json)/, (req, res, next) => {
+  res.sendStatus(404)
+})
+
 app.get('/', (req, res) => {
   res.send(uuidv4());
 });
