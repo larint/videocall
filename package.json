@@ -1,0 +1,19 @@
+{
+  "name": "videocall",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node index.js",
+    "publish": "git add . && git commit -m 'init' && git push origin master"
+  },
+  "author": "Abhishek kalra",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "peer": "^0.6.1",
+    "socket.io": "^3.0.4",
+    "uuid": "^8.3.2"
+  }
+}
